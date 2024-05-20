@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 0;
+    background-color: #E0FBE2;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    text-align: start;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #1dbf73; /* Fiverr logo color */
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #17a65e;
+}
+
+.notes-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.notes-section > div {
+    width: 48%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+li .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Add this line */
+}
+
+li.completed {
+    color: #888;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+}
+
+li button:hover {
+    color: #555;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1dbf73;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    top: 2px;
+    left: 6px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep for me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keep for me</h1>
+        <form id="note-form">
+            <input type="text" id="note-input" placeholder="Enter your note here..." required>
+            <button type="submit">Add Note</button>
+        </form>
+        <div class="notes-section">
+            <div class="keeping">
+                <h2>Keeping</h2>
+                <ul id="keeping-list"></ul>
+            </div>
+            <div class="completed">
+                <h2>Completed</h2>
+                <ul id="completed-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
